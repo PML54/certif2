@@ -1,11 +1,11 @@
 {
-    "name": "departements",
-    "short_name": "departements",
+    "name": "certif",
+    "short_name": "certif",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "departements",
+    "description": "certificat a plusieurs",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
