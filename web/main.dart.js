@@ -8549,7 +8549,8 @@ this.b=b
 this.c=c},
 a6P:function a6P(){},
 a6Q:function a6Q(){},
-a6R:function a6R(){},
+a6R:function a6R(a,b){this.a=a
+this.b=b},
 a6S:function a6S(){},
 a6T:function a6T(){},
 a6U:function a6U(){},
@@ -38991,7 +38992,7 @@ A.Kr.prototype={
 M(a){var s=null,r=A.au(a).ax,q=r.k2
 r=q==null?r.c:q
 this.a.toString
-return A.ai0(A.afi(s,r,s,A.mK("NATIONALE 4 420-5",s)),A.jX(A.nU(B.LN,new A.a7i(a),s),s,s),s)}}
+return A.ai0(A.afi(s,r,s,A.mK("NATIONALE 4 420-7",s)),A.jX(A.nU(B.LN,new A.a7i(a),s),s,s),s)}}
 A.a7i.prototype={
 $0(){var s=A.ah2(new A.a7h(),null,t.z)
 A.uv(this.a).tt(s)},
@@ -39161,7 +39162,7 @@ a0f(){var s,r=$.bw,q=(r==null?$.bw=$.dq():r).cZ(0,"[DEFAULT]")
 A.cb(q,$.cW(),!0)
 s=A.k7(new A.cr(q))
 A.hj(s,s.gc4().eq("gamedepartement")).Aw().rU(new A.a6I(this))
-this.a0e()},
+if(this.cx===0)this.a0e()},
 Il(a){var s,r=this
 r.e=a
 if(a===0)return
@@ -39200,7 +39201,6 @@ Jv(a){var s,r,q,p,o,n=this,m=n.Hp(n.k2,a,n.at)
 if(n.WU(n.x,a)===1)return
 if(a===n.at){A.cV(" BINGO")
 n.id=!0
-n.ax=2
 for(s=$.jN,r=s.length,q=0;q<s.length;s.length===r||(0,A.G)(s),++q){p=s[q]
 o=p.a
 if(n.dx===o)n.ht(o,!0,p.w+1,0,!0)}n.mb(1,1)
@@ -39232,23 +39232,23 @@ case 4:q.ax=b
 return A.K(null,r)}})
 return A.L($async$mb,r)},
 oO(a,b,c){return this.a2k(a,b,c)},
-a2k(a,b,c){var s=0,r=A.M(t.H),q,p,o,n,m
+a2k(a,b,c){var s=0,r=A.M(t.H),q=this,p,o,n,m,l
 var $async$oO=A.N(function(d,e){if(d===1)return A.J(e,r)
-while(true)switch(s){case 0:n=$.bw
-m=(n==null?$.bw=$.dq():n).cZ(0,"[DEFAULT]")
-A.cb(m,$.cW(),!0)
-q=A.k7(new A.cr(m))
+while(true)switch(s){case 0:m=$.bw
+l=(m==null?$.bw=$.dq():m).cZ(0,"[DEFAULT]")
+A.cb(l,$.cW(),!0)
+p=A.k7(new A.cr(l))
 s=2
-return A.I(A.hj(q,q.gc4().eq("gamedepartement")).oR(0,"gameid",1).ij(0),$async$oO)
-case 2:p=e
-s=p.gcK(p).length!==0?3:5
+return A.I(A.hj(p,p.gc4().eq("gamedepartement")).oR(0,"gameid",1).ij(0),$async$oO)
+case 2:o=e
+s=o.gcK(o).length!==0?3:5
 break
-case 3:n=B.b.gJ(B.b.gF(p.gcK(p)).b.b.a)
-n=A.hj(q,q.gc4().eq("gamedepartement")).ev(0,n)
-o=A.HX(A.aC(["departfrom",a,"departto",b,"dadate",new A.bZ(Date.now(),!1),"gamestatus",c],t.K,t.X))
-o.toString
+case 3:m=B.b.gJ(B.b.gF(o.gcK(o)).b.b.a)
+m=A.hj(p,p.gc4().eq("gamedepartement")).ev(0,m)
+n=A.HX(A.aC(["departfrom",a,"departto",b,"dadate",new A.bZ(Date.now(),!1),"gamestatus",c],t.K,t.X))
+n.toString
 s=6
-return A.I(n.a.aw(0,o).b2(0,new A.a6R(),t.P).ep(new A.a6S()),$async$oO)
+return A.I(m.a.aw(0,n).b2(0,new A.a6R(q,c),t.P).ep(new A.a6S()),$async$oO)
 case 6:s=4
 break
 case 5:A.cV("Error updateThisWay ")
@@ -39459,9 +39459,8 @@ i.uE(l,!1)
 q.k1=i
 l=q.as
 if(!(l===0||q.at===0))q.Il(l)
-new A.a6H().$0()
-q.c.hl()
-q.ch=!1
+if(q.c!=null){new A.a6H().$0()
+q.c.hl()}q.ch=!1
 l=B.f.aO(A.ci(0,Date.now()-k).a,6e7)>5
 q.ch=l
 if(l)q.ns()}},
@@ -39509,7 +39508,7 @@ A.a6Q.prototype={
 $1(a){A.cV("Error updateThisWay : "+A.i(a))},
 $S:4}
 A.a6R.prototype={
-$1(a){},
+$1(a){this.a.ax=this.b},
 $S:8}
 A.a6S.prototype={
 $1(a){A.cV("Error updateThisWay : "+A.i(a))},
