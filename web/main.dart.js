@@ -44996,7 +44996,7 @@ p.R8=A.ac(new A.a2(n,new A.akh(),m),!0,m.i("aP.E"))
 p.id=0
 for(n=$.nG,m=n.length,s=0;s<m;++s){r=n[s]
 q=A.cg(0,o-r.f.a)
-if(r.a===1001)if(B.e.bt(q.a,6e7)>1){p.id=1001
+if(r.a===1001)if(B.e.bt(q.a,6e7)>10){p.id=1001
 p.pA()
 return}}A.ct("Step firstConnect nbinactif 0")
 A.ct("Step firstConnect gameActif 1")
